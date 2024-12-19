@@ -7,7 +7,6 @@ let playerRole = null; // Ensure this is set based on your application logic
 const renderBoard = () => {
     const board = chess.board(); // Get the board array from Chess.js
     boardElement.innerHTML = ""; // Clear the current board
-
     board.forEach((row, rowIndex) => {
         row.forEach((square, squareIndex) => {
             const squareElement = document.createElement("div");
